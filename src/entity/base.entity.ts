@@ -14,6 +14,6 @@ export abstract class Base {
     })
     updatedAt: Date;
   
-    @Column({type: 'boolean'})
+    @Column({type: 'boolean', default: false})
     isDeleted: Boolean
 }

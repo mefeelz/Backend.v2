@@ -40,24 +40,24 @@ export enum Rank {
 export class User extends Base {
   @Column({unique: true})
   @IsEmail()
-  email: String;
+  email: string;
 
   @Column()
   @IsString()
-  password: String;
+  password: string;
 
   @Column()
   @IsString()
-  name: String;
+  name: string;
 
   @Column({ type: 'boolean', default: false })
   @IsBoolean()
-  isValid: Boolean;
+  isValid: boolean;
 
   @Column()
   @IsOptional()
   @IsString()
-  nickname?: String;
+  nickname?: string;
 
   @Column({ type: 'enum', enum: Status })
   @IsEnum(Status)
@@ -66,7 +66,7 @@ export class User extends Base {
 
   @Column()
   @IsString()
-  token?: String;
+  token?: string;
 
   @Column({ type: 'enum', enum: Rank, default: Rank.PV})
   @IsOptional()

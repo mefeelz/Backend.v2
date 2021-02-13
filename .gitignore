@@ -41,3 +41,6 @@ lerna-debug.log*
 
 # ORM Config
 ormconfig.json
+
+# JWT Secret
+constants.ts
